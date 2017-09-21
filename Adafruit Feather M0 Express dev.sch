@@ -5008,7 +5008,6 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <part name="R7" library="microbuilder" deviceset="RESISTOR" device="_0603_NOOUT" value="2.2K"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="U$34" library="microbuilder" deviceset="FIDUCIAL" device="&quot;&quot;"/>
-<part name="U$35" library="microbuilder" deviceset="FIDUCIAL" device="&quot;&quot;"/>
 <part name="SW1" library="adafruit" deviceset="SPST_TACT" device="-KMR2"/>
 <part name="U$31" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$32" library="microbuilder" deviceset="MOUNTINGHOLE" device="2.5"/>
@@ -5099,9 +5098,10 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <text x="238.76" y="83.82" size="1.778" layer="94">RED LED</text>
 <text x="152.4" y="116.84" size="1.778" layer="91">Internal SPI on SERCOM 2</text>
 <wire x1="256.54" y1="124.46" x2="134.62" y2="124.46" width="0.1524" layer="94" style="shortdash"/>
-<text x="287.02" y="119.38" size="2.54" layer="94" font="vector">Limor Fried &amp; KTOWN</text>
-<text x="297.18" y="180.34" size="2.54" layer="94" ratio="15" align="center">SWD Interface</text>
-<text x="287.02" y="114.3" size="2.1844" layer="94">&amp; bsiepert</text>
+<text x="154.94" y="-5.08" size="2.54" layer="94" font="vector" ratio="10">Original boards by Limor Fried &amp; KTOWN</text>
+<text x="294.64" y="167.64" size="2.54" layer="94" ratio="15" align="center">SWD Header</text>
+<text x="165.1" y="-10.16" size="2.1844" layer="94" ratio="12">Developer mods by bsiepert</text>
+<text x="287.02" y="142.24" size="2.54" layer="94" ratio="15" align="center">SPI Flash Header</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$3" x="134.62" y="2.54"/>
@@ -5120,7 +5120,6 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <instance part="R7" gate="G$1" x="246.38" y="68.58" rot="R270"/>
 <instance part="GND10" gate="1" x="246.38" y="48.26" rot="MR0"/>
 <instance part="U$34" gate="G$1" x="210.82" y="17.78"/>
-<instance part="U$35" gate="G$1" x="205.74" y="17.78"/>
 <instance part="SW1" gate="G$1" x="124.46" y="152.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="121.92" y="158.75" size="1.778" layer="95"/>
 <attribute name="VALUE" x="123.19" y="151.765" size="1.778" layer="96" rot="R270"/>
@@ -5192,7 +5191,7 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <attribute name="VALUE" x="323.342" y="161.29" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$24" gate="G$1" x="320.04" y="172.72"/>
-<instance part="J2" gate="G$1" x="281.94" y="134.62"/>
+<instance part="J2" gate="G$1" x="287.02" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -5323,7 +5322,7 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <junction x="287.02" y="154.94"/>
 </segment>
 <segment>
-<wire x1="297.18" y1="132.08" x2="292.1" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="129.54" x2="297.18" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="6"/>
 </segment>
 </net>
@@ -5532,7 +5531,7 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <junction x="287.02" y="160.02"/>
 </segment>
 <segment>
-<wire x1="297.18" y1="137.16" x2="292.1" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="134.62" x2="297.18" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -5773,7 +5772,7 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <label x="149.86" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="292.1" y1="134.62" x2="297.18" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="132.08" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="4"/>
 </segment>
 </net>
@@ -5940,7 +5939,7 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <label x="149.86" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="274.32" y1="134.62" x2="269.24" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="132.08" x2="274.32" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="3"/>
 </segment>
 </net>
@@ -5984,7 +5983,7 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <label x="149.86" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="269.24" y1="137.16" x2="274.32" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="134.62" x2="279.4" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -5994,13 +5993,10 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <errors>
 <approved hash="102,1,48.26,147.32,OUT,+3V3,,,,"/>
 <approved hash="104,1,27.94,147.32,U2,IN,VBUS,,,"/>
-<approved hash="104,1,175.26,147.32,U3,VDD,VBUS,,,"/>
-<approved hash="104,1,200.66,142.24,U3,VSS,GND,,,"/>
 <approved hash="104,1,27.94,86.36,U$4,VDDA,+3V3,,,"/>
 <approved hash="104,1,27.94,81.28,U$4,VDDIN,+3V3,,,"/>
 <approved hash="104,1,27.94,20.32,U$4,GNDA,GND,,,"/>
 <approved hash="104,1,27.94,88.9,U$4,VDDIO,+3V3,,,"/>
-<approved hash="104,1,-22.86,96.52,LED1,VDD,+3V3,,,"/>
 </errors>
 </schematic>
 </drawing>
