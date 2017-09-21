@@ -5191,7 +5191,7 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <attribute name="NAME" x="318.5414" y="158.75" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="323.342" y="161.29" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$24" gate="G$1" x="320.04" y="170.18"/>
+<instance part="U$24" gate="G$1" x="320.04" y="172.72"/>
 <instance part="J2" gate="G$1" x="281.94" y="134.62"/>
 </instances>
 <busses>
@@ -5534,6 +5534,11 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <segment>
 <wire x1="297.18" y1="137.16" x2="292.1" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="U$24" gate="G$1" pin="3.3V"/>
+<wire x1="320.04" y1="170.18" x2="320.04" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -5981,12 +5986,6 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <segment>
 <wire x1="269.24" y1="137.16" x2="274.32" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="U$24" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 </nets>
